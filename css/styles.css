@@ -1,0 +1,92 @@
+/*>>>>>>APPROVED Color Palette
+  P rgb(244, 36, 52);       S rgb(202, 42, 49)
+  P rgb(178, 178, 177);     S rgb(216, 44, 53)
+  P rgb(28, 28, 27);        S rgb(244, 36, 52)
+  P rgb(255, 255, 255);     S rgb(249, 73, 70)
+  __________________________________END<<<<<<<*/
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+}
+p {
+    font-weight: 100;
+}
+.banner {
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner__text {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+}
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+.navbar li {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 400;
+    list-style: none;
+    color: white;
+    padding: 4px 16px;
+    margin-top: 5px;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+.navbar li:hover {
+    border-color: rgb(155, 26, 32);
+}
+.banner__1 {
+    background-image: url("../assets/books.jpeg");
+}
+.banner__2 {
+    background-image: url("../assets/field.jpeg");
+}
+.grid__first {
+    display: flex;
+    flex-flow: row nowrap; 
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: white;
+    color: rgb(178, 178, 177);
+    font-size: 1.2em;
+}
+.grid__first--Col {
+    max-width: 50%;
+    margin: 1em;
+    border: 10px rgb(244, 36, 52);
+    border-radius: 10px;
+}
+/*======= MEDIA QUERIES =========*/
+@media (max-width: 737px) {
+    .banner {
+        background-attachment: scroll;
+    }
+}
