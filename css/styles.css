@@ -35,7 +35,7 @@ footer {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border-bottom: 1.5px solid white; */
+    border-bottom: 1.5px solid white;
     border-top: 1.5px solid white;
     border-radius: 3%;
     text-shadow: 1px 3px 30px #000;
@@ -101,6 +101,21 @@ footer {
     justify-content: center;
     height: auto;
 }
+.top__scroll {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 500;
+    display: none;
+    text-decoration: none;
+    color: #bbb6b5cc;
+    font-size: 70px;
+    }
+.top__scroll i {     
+    font-size: 60px; 
+    }
 .grid__first--Col img {
     border-radius: 50px;
     width: 300px;
