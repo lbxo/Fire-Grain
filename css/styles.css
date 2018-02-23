@@ -35,10 +35,17 @@ footer {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-bottom: 1.5px solid white;
+    /* border-bottom: 1.5px solid white; */
     border-top: 1.5px solid white;
-    border-radius: 10%;
+    border-radius: 3%;
     text-shadow: 1px 3px 30px #000;
+}
+.banner__grid img {
+    max-width: 300px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .navbar {
     width: 100%;
@@ -73,6 +80,9 @@ footer {
 .banner__2 {
     background-image:linear-gradient(rgba(75, 72, 72, 0.7),rgba(243, 122, 9, 0.808)), url("../assets/woodside.jpeg");
 }
+.banner__3 {
+    background-image:linear-gradient(rgba(75, 72, 72, 0.7),rgba(29, 167, 221, 0.774)), url("../assets/anvil.jpeg");
+}
 .footer__content {
     display: flex;
     height: auto;
@@ -80,6 +90,12 @@ footer {
     align-items: center;
 }
 .grid__first {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: auto;
+}
+.grid__third {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -96,7 +112,7 @@ footer {
 
 
 /*======= MEDIA QUERIES =========*/
-@media (max-width: 737px) {
+@media (max-width: 768px) {
     .grid__first {
         flex: 100%;
         flex-direction: column;
@@ -104,11 +120,14 @@ footer {
         max-width: 100%;
     }
     .banner__text {
-        font-size: 3em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .banner__grid img {
+    max-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
 }    
 @media (max-width: 412px) {
