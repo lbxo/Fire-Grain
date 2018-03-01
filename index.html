@@ -6,36 +6,38 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     </head>
 
-    <body>
+    <body class="container">
 
         <div class="banner banner__1">
             <div class="navbar">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#feature__1">Services</a></li>
-                    <li><a href="#feature__2">About</a></li>
-                    <li><a href="#feature__3">Connect</a></li>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#feature__wood">Wood</a></li>
+                    <li><a href="#feature__about">About</a></li>
+                    <li><a href="#feature__contact">Connect</a></li>
                 </ul>
             </div>
             <div class="banner__grid">
                 <div>
-                    <img src="assets/fire_white.svg" alt="f&glogo">
+                    <img src="assets/fire_white.svg" alt="fglogo">
                 </div>
                 <h1 class="banner__text">Fire&amp;<strong>Grain</strong></h1>
             </div>
         </div>
 
-        <section id="feature__1">
+        <section id="feature__wood">
             <div class="grid__first">
                 <div class="grid__first--Col">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum nisi id orci volutpat sagittis. In hac habitasse platea dictumst. Duis malesuada eu tortor et egestas. Vestibulum quis feugiat erat, vitae accumsan ante. Suspendisse vel iaculis mi. Ut quis porta lacus, sed consequat mi. Donec nibh odio, aliquet eu mauris id, tincidunt aliquet erat. Sed in massa a orci mollis.</p>
                 </div>
                 <div class="grid__first--Col">
+                    <p>Just some stuff...</p>
                 </div>
                 <div class="grid__first--Col">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum nisi id orci volutpat sagittis. In hac habitasse platea dictumst. Duis malesuada eu tortor et egestas. Vestibulum quis feugiat erat, vitae accumsan ante. Suspendisse vel iaculis mi. Ut quis porta lacus, sed consequat mi. Donec nibh odio, aliquet eu mauris id, tincidunt aliquet erat. Sed in massa a orci mollis.</p>
@@ -45,8 +47,8 @@
 
         <div class="banner banner__2"></div>
 
-        <section id="feature__2">
-                <div class="grid__first">
+        <section id="feature__about">
+                <div class="grid__first grid__second">
                     <div class="grid__first--Col">
                         <img src="assets/lucas_headshot_2017.jpeg" alt="me">
                     </div>
@@ -58,32 +60,41 @@
 
         <div class="banner banner__3"></div>
 
-        <section id="feature__3">
+        <section id="feature__contact">
                 <div class="grid__third">
-                    <div class="grid__first--Col">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus magna sed metus venenatis vulputate. Integer ullamcorper accumsan gravida. Integer elit turpis, varius ac massa sit amet, rhoncus venenatis lorem. Mauris blandit auctor dignissim. Vestibulum semper mi imperdiet, faucibus ex ut, vestibulum lorem. Maecenas auctor purus purus. Praesent ut pretium.</p>
+                    <div class="grid__third--Col">
+                        <h2>I would love to hear from you!</h2>
                     </div>
                     <div class="contact">
-                        <form method="post">
+                        <!-- <form method="post"> -->
                             <label for="Name">Name:</label>
-                            <input type="text" name="Name" id="Name" />
+                            <input type="text" name="Name" id="Name" placeholder="Full Name">
                             
                             <label for="City">City:</label>
-                            <input type="text" name="City" id="City" />
+                            <input type="text" name="City" id="City" placeholder="Location">
                 
                             <label for="Email">Email:</label>
-                            <input type="text" name="Email" id="Email" />
+                            <input type="text" name="Email" id="Email" placeholder="Email">
                             
-                            <label for="Message">Message:</label><br />
-                            <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+                            <label for="Message">Message:</label><br/>
+                            <textarea name="Message" id="Message" placeholder="I would love to hear from you..."></textarea>
             
-                            <input type="submit" name="submit" value="Submit" class="submit-button" />
-                        </form>
+                            <input type="submit" name="submit" value="Submit" class="submit-btn" />
+                        <!-- </form> -->
                     </div>
                 </div>
         </section>
 
         <footer>
+            
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
             <div class="footer__content">
                 <p>&copy; Fire&amp;Grain</p>
             </div>

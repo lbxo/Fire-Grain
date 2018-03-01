@@ -1,3 +1,5 @@
+/*========= BLOCKS =============*/
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +10,7 @@ html {
 body, html {
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    color: rgb(90, 90, 90);
 }
 p {
     font-weight: 100;
@@ -17,8 +20,13 @@ p {
 footer {
     width: 100%;
     height: 50px;
-    color: white;
-    background-color: lightgrey;
+}
+
+/*========= ELEMENTS ===========*/
+
+.container {
+    max-width: 80%;
+    margin: auto;
 }
 .banner {
     height: 100vh;
@@ -48,15 +56,19 @@ footer {
     transform: translate(-50%, -50%);
 }
 .navbar {
-    width: 100%;
     text-align: right;
 }
-.navbar ul {
+.social {
+    text-align: center;
+}
+.navbar ul,
+.social ul {
     padding: 5px;
     margin: auto;
-    height: 100px;
+    height: 50px;
 }
-.navbar li {
+.navbar li, 
+.social li {
     display: inline-block;
     font-size: 1.2em;
     font-weight: 200;
@@ -68,20 +80,28 @@ footer {
     text-decoration: none;
     color: white;
 }
-/* .navbar li:hover {
-    color: white;
-    border-left: 1px solid darkgray;
-    border-right: 1px solid darkgray;
-    border-radius: 5px;
-} */
+.navbar a:hover {
+    border-bottom: 1px solid white;
+}
+.social a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+.social a:hover,
+.social li:hover {
+    opacity: 0.8;
+    border-bottom: 1px solid rgba(156, 19, 19, 0.386);
+}
 .banner__1 {
     background-image: linear-gradient(rgba(75, 72, 72, 0.7), rgba(156, 19, 19, 0.386)), url("../assets/work.jpeg");
 }
 .banner__2 {
     background-image:linear-gradient(rgba(75, 72, 72, 0.7),rgba(243, 122, 9, 0.808)), url("../assets/woodside.jpeg");
+    height: 50vh;
 }
 .banner__3 {
     background-image:linear-gradient(rgba(75, 72, 72, 0.7),rgba(29, 167, 221, 0.774)), url("../assets/anvil.jpeg");
+    height: 35vh;
 }
 .footer__content {
     display: flex;
@@ -93,12 +113,15 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    margin: auto;
     height: auto;
+    max-width: 75%;
+}
+.grid__second {
+    align-items: center;
 }
 .grid__third {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    display: block;
     height: auto;
 }
 .top__scroll {
@@ -107,27 +130,68 @@ footer {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    z-index: 500;
+    z-index: 100;
     display: none;
     text-decoration: none;
     color: #bbb6b5cc;
     font-size: 70px;
-    }
+}
 .top__scroll i {     
     font-size: 60px; 
-    }
+}
+.contact {
+    width: 350px;
+    height: auto;
+    margin: 15px auto;
+    padding: 100px;
+    background-color: rgba(42, 42, 49, 0.856);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 9px rgba(0,0,0,0.5);
+}
+.contact img {
+    margin: auto;
+    width: 170px;
+    height: 170px;
+}
+.contact label {
+    padding: 15px 0;
+}
+.submit-btn {
+    background: white;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+
+/*========== MODIFIERS ===========*/
+
 .grid__first--Col img {
+    margin: 20px;
     border-radius: 50px;
     width: 300px;
 }
 .grid__first--Col {
-    max-width: 80%;
+    align-content: center;
     margin: 1em;
+}
+.grid__third--Col {
+    margin: 25px auto;
+    width: max-content;
 }
 
 
 /*======= MEDIA QUERIES =========*/
+
 @media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .navbar ul {
+        text-align: center;
+    }
     .grid__first {
         flex: 100%;
         flex-direction: column;
