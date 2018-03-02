@@ -249,9 +249,9 @@ footer {
     }
 }    
 @media (max-width: 412px) {
-    .banner {
+    /* .banner {
         background-attachment: scroll;
-    }
+    } */
     .grid__first {
         flex: 100%;
         flex-direction: column;
