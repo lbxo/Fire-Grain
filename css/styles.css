@@ -89,11 +89,9 @@ footer {
     text-decoration: none;
     color: rgb(90, 90, 90);
 }
-/* .social a:hover, */
 .social li:hover {
     opacity: 0.8;
     border-bottom: 1px solid rgba(156, 19, 19, 0.686);
-
 }
 .banner__1 {
     background-image: linear-gradient(rgba(75, 72, 72, 0.7), rgba(156, 19, 19, 0.386)), url("../assets/work.jpeg");

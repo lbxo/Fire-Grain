@@ -7,12 +7,12 @@
 ## Custom CSS Classes
 
 ``` The class(es) I created are:
- 1. class name ( .banner )
+ 1-- .banner
 This class uses a height: vh allowing the background image to be seen full screen and remained fixed to the
 background when the end-user loads the page.  It also uses multiple background properties to adjust positioning for the image.
 ```
 ```
- 2. class name ( .grid__first)
+ 2-- .grid__first
 This class utilizes flexbox in order to create a multi-column layout for text in the section.  Using the display
 property to set the flexbox and the flex-flow property to set direction and wrap in the same code line.  This sets up
 the ability to easily manipulate the responsive design by use of media queries.  This same class selector is used in
