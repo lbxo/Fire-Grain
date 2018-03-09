@@ -15,7 +15,7 @@ body, html {
 p {
     font-weight: 100;
     font-size: 1.1em;
-    line-height: 1.2;
+    line-height: 1.7em;
 }
 footer {
     width: 100%;
@@ -116,7 +116,7 @@ footer {
     justify-content: center;
     margin: auto;
     height: auto;
-    max-width: 75%;
+    max-width: 85%;
 }
 .grid__second {
     align-items: center;
@@ -143,13 +143,13 @@ footer {
 }
 .contact {
     width: 350px;
-    height: 500px;
+    height: 400px;
     margin: auto;
     padding: 100px;
     background-color: rgb(150,150,150);
     color: white;
     border-radius: 10px;
-    box-shadow: 2px 4px 9px rgba(0,0,0,0.5);
+    box-shadow: 3px 7px 15px rgba(0,0,0,0.5);
 }
 .contact img {
     margin: auto;
@@ -160,7 +160,8 @@ footer {
     padding: 15px 0;
 }
 .contact input {
-    margin: 10px 0;
+    margin: 3px 0;
+    max-width: 90%;
 }
 .submit-btn {
     background: white;
@@ -172,13 +173,13 @@ footer {
     -webkit-transition: background .25s ease-in-out;
 }
 .submit-btn:hover {
-    background: rgba(42, 42, 49, 0.856);
+    background: rgb(67, 197, 132);
     color: white;
     cursor: pointer;
 }
 .contactMap {
     width: 350px;
-    height: 500px;
+    height: 400px;
     margin: auto;
     border: 2px solid rgb(90, 90, 90);
     border-radius: 10px;
@@ -199,14 +200,15 @@ footer {
     width: 300px;
 }
 .grid__first--Col {
+    flex: 33%;
     align-content: center;
-    margin: 1em;
+    margin: 1.1em;
+    line-height: 1.5em;
 }
 
 
-
 /*======= MEDIA QUERIES =========*/
-@media (max-width: 910px) {
+@media (max-width: 956px) {
     .grid__first,
     .grid__second,
     .grid__third {
@@ -238,11 +240,11 @@ footer {
         display: none;
     }
     .banner__grid img {
-    max-width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        max-width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .contact {
         margin-bottom: 15px;
