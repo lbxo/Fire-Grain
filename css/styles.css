@@ -1,9 +1,5 @@
 /*========= BLOCKS =============*/
 
-/* * {
-    box-sizing: border-box;
-} */
-
 html {
     scroll-behavior: smooth;
 }
@@ -136,7 +132,7 @@ footer {
 .grid__third {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .top__scroll {
     background: none;
@@ -169,20 +165,24 @@ footer {
 }
 .contact input[type=text] {
     margin: 5px 0;
+    padding: 6px 3px;
     width: 100%;
     display: inline-block;
     border: none;
-    border-radius: 2px;
-    border-bottom: 1px solid rgb(63, 6, 6);
+    border-radius: 3px;
 }
 .contact input[type=text]:focus {
     outline: none;
-    border-bottom: 2px solid rgb(85, 12, 12);
+    border-bottom: 2px solid rgb(63, 6, 6);
 }
 .contact textarea {
+    padding: 6px 3px;
     width: 100%;
+    max-width: 100%;
+    max-height: 3em;
+    outline: none;
 }
-.submit-btn {
+.submit__btn {
     background: white;
     width: 100%;
     margin: 10px 0;
@@ -192,7 +192,7 @@ footer {
     -moz-transition: background .25s ease-in-out, color .25s ease-in-out;
     -webkit-transition: background .25s ease-in-out, color .25s ease-in-out;
 }
-.submit-btn:hover {
+.submit__btn:hover {
     background: rgb(63, 6, 6);
     color: white;
     cursor: pointer;
@@ -228,6 +228,7 @@ footer {
 
 
 /*======= MEDIA QUERIES =========*/
+
 @media (max-width: 956px) {
     .grid__first,
     .grid__second,
@@ -257,7 +258,6 @@ footer {
         max-width: 100%;
     }
     .banner__text {
-        /* display: none; */
         font-size: 3em;
         position: absolute;
         top: 65%;
