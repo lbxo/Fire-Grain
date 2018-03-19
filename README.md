@@ -8,7 +8,7 @@
 
 ``` The class(es) I created are:
  1-- .banner
-This class uses a height: vh allowing the background image to be seen full screen and remained fixed to the
+This class uses a height: vh allowing the background image to be seen full screen or partial and remain fixed to the
 background when the end-user loads the page.  It also uses multiple background properties to adjust positioning for the image.
 ```
 ```
@@ -29,5 +29,5 @@ This is a jquery function that is located in the app--topscroll.js file that ani
 ```
 ```
 2-- function initMap ()
-This is 
+This is a function that when called at page load, will display a google map.  This function consists of one variable that has the coordinates for the map to display. The second variable declares the new map and utilizes the getElementById to indicate where it will be put in the html. Finally, the third varialbe adds a marker to the map and has attributes to style the marker type.  This is called by an asynchronous type script with the source of the map using an generated API key.
 ```
