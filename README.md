@@ -24,6 +24,10 @@ responsive design.
 
 ``` The javascript functions I created are: 
 
-1. function name ex( animate() ) .. what function does ex( animate() 
-is used to move the elements in the info div across the screen)
+1-- $(document).ready(function)
+This is a jquery function that is located in the app--topscroll.js file that animates a button that appears once the page has been scrolled past 120px.  An icon with an up-arrow appears in the bottom right hand corner of the screen, that when clicked or touched, will scroll the page back to the top.
+```
+```
+2-- function initMap ()
+This is 
 ```
