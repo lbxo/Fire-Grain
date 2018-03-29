@@ -19,6 +19,10 @@ the ability to easily manipulate the responsive design by use of media queries. 
 media queries that change the direction properties and the max-width properties of the content boxes, thus allowing a
 responsive design.
  ```
+ ```
+ 3-- .contact
+This class utilizes the width and height properties to set the size for the contact form.  It also uses the border properties that give the box rounded corners and the box-shadow property to give it a 3D effect on the page.  It'subtle but helps it stand off the page a bit.
+ ```
 
 ## Custom JavaScript Functions
 
