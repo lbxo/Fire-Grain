@@ -144,21 +144,21 @@ footer {
     font-size: 1.8em;
 }
 .contact {
+    box-sizing: border-box;
     width: 350px;
     height: 400px;
     margin: auto;
     padding: 20px;
     background-color: rgb(170, 170, 170);
-    color: white;
+    /* color: white; */
     border-radius: 15px;
     box-shadow: 3px 7px 15px rgba(0,0,0,0.5);
-    box-sizing: border-box;
 }
 .contact form {
     padding-top: 2em;
 }
 .contact input[type=text] {
-    margin: 10px auto;
+    margin: 12px auto;
     padding: 6px 3px;
     width: 100%;
     display: inline-block;
@@ -168,6 +168,9 @@ footer {
 }
 .contact input[type=text]:focus {
     outline: none;
+    transition: border-bottom 0.4s ease-in-out;
+    -moz-transition: border-bottom 0.4s ease-in-out;
+    -webkit-transition: border-bottom 0.4s ease-in-out;
     border-bottom: 2px solid rgb(63, 6, 6);
 }
 .contact textarea {
@@ -182,7 +185,7 @@ footer {
     background: white;
     width: 100%;
     margin: 15px auto;
-    padding: 5px;
+    padding: 10px;
     border-radius: 4px;
     transition: background .25s ease-in-out, color .25s ease-in-out;
     -moz-transition: background .25s ease-in-out, color .25s ease-in-out;
